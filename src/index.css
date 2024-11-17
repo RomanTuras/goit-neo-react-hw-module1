@@ -13,6 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 
 body {
   font-family: sans-serif;
@@ -30,9 +37,10 @@ p {
 }
 
 ul,
-ol {
+li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
