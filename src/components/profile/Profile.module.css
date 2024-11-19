@@ -1,18 +1,18 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 350px;
-  border: 4px solid #606060;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    border: 4px solid var(--card-border-color);
+    border-radius: 15px;
 }
 
 .profileImage {
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
-  border-radius: 75px;
-  background-color: #555;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 75px;
+    background-color: var(--gray-color);
 }
 
 .profileName,
@@ -20,45 +20,57 @@
 .profileLocation,
 .statLabel,
 .statValue {
-  font-size: 18px;
-  color: #151515;
+    font-size: 18px;
+    color: var(--white-color);
 }
 
 .profileName,
 .statValue {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .profileTag,
 .profileLocation {
-  color: gray;
+    color: var(--card-border-color);
 }
 
 .profileTag,
 .profileName {
-  margin-top: 12px;
+    margin-top: 12px;
 }
 
 .stats {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 12px;
-  align-items: center;
-  background-color: lightgray;
-  border-top: 2px solid grey;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12px;
+    align-items: center;
+    background-color: var(--black-color);
+    border-top: 2px solid var(--card-border-color);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .statItem {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  height: inherit;
-  padding: 10px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: inherit;
+    padding: 10px 0;
 }
 
 .statItem:not(:last-child) {
-  border-right: 2px solid grey;
+    border-right: 2px solid var(--card-border-color);
+}
+
+@media (prefers-color-scheme: light) {
+    .profileName,
+    .statLabel,
+    .statValue {
+        color: var(--black-color);
+    }
+
+    .stats {
+        background-color: var(--light-grey-color);
+    }
 }

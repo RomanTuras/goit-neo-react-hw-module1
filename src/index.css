@@ -6,11 +6,20 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --black-color: #151515;
+  --white-color: #f0f0f0;
+  --gray-color: #555;
+  --light-grey-color: #ddd;
+  --table-bg-color: #353535;
+  --card-border-color: #606060;
+  --table-even-bg-color: #003050;
+  --table-bg-color-hover: #999;
 }
 
 #root {
